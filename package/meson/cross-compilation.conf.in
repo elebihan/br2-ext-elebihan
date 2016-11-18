@@ -1,0 +1,15 @@
+# Note: in Meson terminology, what Buildroot calls the "host" system is the
+# "build" system and the "target" system is called the "host" system.
+
+[host_machine]
+system = 'linux'
+cpu_family ='@TARGET_ARCH@'
+cpu = 'generic'
+endian = '@TARGET_ENDIAN@'
+
+[binaries]
+c = '@TARGET_CROSS@gcc'
+cpp = '@TARGET_CROSS@g++'
+ar = '@TARGET_CROSS@ar'
+strip = '@TARGET_CROSS@strip'
+pkgconfig = '@HOST_DIR@/usr/bin/pkg-config'
