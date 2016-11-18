@@ -1,0 +1,16 @@
+config BR2_PACKAGE_CHICKEN
+	bool "chicken"
+	help
+	  Chicken is a practical and portable Scheme system.
+
+	  http://code.call-cc.org/
+
+if BR2_PACKAGE_CHICKEN
+
+config BR2_PACKAGE_CHICKEN_REPL
+	bool "Install interpreter"
+	default n
+	help
+	  Install interactive interpreter
+
+endif
