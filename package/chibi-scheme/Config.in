@@ -1,0 +1,16 @@
+config BR2_PACKAGE_CHIBI_SCHEME
+	bool "chibi-scheme"
+	help
+	  Minimal Scheme Implementation for use as an Extension Language.
+
+	  http://synthcode.com/wiki/chibi-scheme
+
+if BR2_PACKAGE_CHIBI_SCHEME
+
+config BR2_PACKAGE_CHIBI_SCHEME_REPL
+	bool "Install interpreter"
+	default n
+	help
+	  Install command line REPL on target
+
+endif

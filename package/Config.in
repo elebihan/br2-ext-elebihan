@@ -1,4 +1,5 @@
 menu "Interpreter languages and scripting"
+	source "$BR2_EXTERNAL_ELEBIHAN_PATH/package/chibi-scheme/Config.in"
 	source "$BR2_EXTERNAL_ELEBIHAN_PATH/package/chicken/Config.in"
 endmenu
 

@@ -1,0 +1,25 @@
+From ee5adff23a9909623a2d5cbb091dba26b6dc0baf Mon Sep 17 00:00:00 2001
+From: Eric Le Bihan <eric.le.bihan.dev@free.fr>
+Date: Fri, 29 Jul 2016 13:23:53 +0200
+Subject: [PATCH] Do not run ldconfig when installing
+
+Signed-off-by: Eric Le Bihan <eric.le.bihan.dev@free.fr>
+---
+ Makefile | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 22ec233..e9da8c8 100644
+--- a/Makefile
++++ b/Makefile
+@@ -320,7 +320,6 @@ install: all
+ 	$(INSTALL) -m0644 doc/chibi-scheme.1 $(DESTDIR)$(MANDIR)/
+ 	$(INSTALL) -m0644 doc/chibi-ffi.1 $(DESTDIR)$(MANDIR)/
+ 	$(INSTALL) -m0644 doc/chibi-doc.1 $(DESTDIR)$(MANDIR)/
+-	-if type ldconfig >/dev/null 2>/dev/null; then ldconfig; fi
+ 
+ uninstall:
+ 	-$(RM) $(DESTDIR)$(BINDIR)/chibi-scheme$(EXE)
+-- 
+2.1.4
+
