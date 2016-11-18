@@ -1,0 +1,10 @@
+config BR2_PACKAGE_PYTHON_SCAPY
+	bool "python-scapy"
+	depends on BR2_PACKAGE_PYTHON
+	help
+	  Scapy is a powerful interactive packet manipulation program.
+	  It is able to forge or decode packets of a wide number of protocols,
+	  send them on the wire, capture them, match requests and replies, and
+	  much more.
+
+	  http://www.secdev.org/projects/scapy/

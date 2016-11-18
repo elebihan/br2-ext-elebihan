@@ -1,0 +1,5 @@
+if BR2_PACKAGE_PYTHON || BR2_PACKAGE_PYTHON3
+menu "External python modules"
+	source "$BR2_EXTERNAL_ELEBIHAN_PATH/package/python-scapy/Config.in"
+endmenu
+endif
