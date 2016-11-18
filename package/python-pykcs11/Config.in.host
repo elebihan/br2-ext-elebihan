@@ -1,0 +1,6 @@
+config BR2_PACKAGE_HOST_PYTHON_PYKCS11
+	bool "host-python-pykcs11"
+	help
+	  Full PKCS#11 Python wrapper
+
+	  https://sourceforge.net/projects/pkcs11wrap/
