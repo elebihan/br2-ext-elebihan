@@ -1,0 +1,24 @@
+config BR2_PACKAGE_BEARSSL
+	bool "bearssl"
+	help
+	  BearSSL is an implementation of the SSL/TLS protocol
+	  (RFC 5246) written in C. It aims at offering the following
+	  features:
+
+	  - Be correct and secure.
+	  - Be small, both in RAM and code footprint.
+	  - Be highly portable
+	  - Be feature-rich and extensible.
+
+	  https://www.bearssl.org
+
+if BR2_PACKAGE_BEARSSL
+
+config BR2_PACKAGE_BEARSSL_BIN
+	bool "brssl binary"
+	help
+	  Install brssl, a command-line tool which can exercise some of
+	  the functionalities of BearSSL, in particular running a test
+	  SSL client or server. It is not meant for production purposes.
+
+endif
