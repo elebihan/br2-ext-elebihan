@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-MESON_VERSION = 0.36.0
+MESON_VERSION = 0.37.0
 MESON_SITE = $(call github,mesonbuild,meson,$(MESON_VERSION))
 MESON_LICENSE = Apache-2.0
 MESON_LICENSE_FILES = COPYING
