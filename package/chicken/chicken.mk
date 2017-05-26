@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-CHICKEN_VERSION = 4.11.0
+CHICKEN_VERSION = 4.12.0
 CHICKEN_SITE = https://code.call-cc.org/releases/$(CHICKEN_VERSION)
 CHICKEN_SOURCE = chicken-$(CHICKEN_VERSION).tar.gz
 CHICKEN_LICENSE = BSD-3c
