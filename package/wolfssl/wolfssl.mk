@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-WOLFSSL_VERSION = 3.11.0
+WOLFSSL_VERSION = 3.12.0
 WOLFSSL_SITE = $(call github,wolfSSL,wolfssl,v$(WOLFSSL_VERSION)-stable)
 WOLFSSL_LICENSE = GPLv2 or COMMERCIAL
 WOLFSSL_LICENSE_FILES = COPYING
