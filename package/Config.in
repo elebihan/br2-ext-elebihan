@@ -7,7 +7,6 @@ menu "Libraries"
 
 menu "Crypto"
 	source "$BR2_EXTERNAL_ELEBIHAN_PATH/package/bearssl/Config.in"
-	source "$BR2_EXTERNAL_ELEBIHAN_PATH/package/wolfssl/Config.in"
 endmenu
 
 endmenu
