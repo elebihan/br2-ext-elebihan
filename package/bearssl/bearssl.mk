@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-BEARSSL_VERSION = 0.5
+BEARSSL_VERSION = 0.6
 BEARSSL_SITE = https://www.bearssl.org
 BEARSSL_LICENSE = MIT
 BEARSSL_LICENSE_FILES = LICENSE.txt
